@@ -1,0 +1,97 @@
+{
+  "properties": {
+    "connectionReferences": {
+      "shared_office365": {
+        "runtimeSource": "invoker",
+        "connection": {
+          "connectionReferenceLogicalName": "new_sharedoffice365_547b1"
+        },
+        "api": {
+          "name": "shared_office365"
+        }
+      }
+    },
+    "definition": {
+      "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+      "contentVersion": "1.0.0.0",
+      "parameters": {
+        "$connections": {
+          "defaultValue": {},
+          "type": "Object"
+        },
+        "$authentication": {
+          "defaultValue": {},
+          "type": "SecureObject"
+        }
+      },
+      "triggers": {
+        "manual": {
+          "metadata": {
+            "operationMetadataId": "acfee143-a89a-4687-8c42-404f0eec395a"
+          },
+          "type": "Request",
+          "kind": "PowerApp",
+          "inputs": {
+            "schema": {
+              "type": "object",
+              "properties": {
+                "Envoyerune-mail(V2)_À": {
+                  "type": "string",
+                  "format": "email",
+                  "description": "Spécifiez les adresses de messagerie en les séparant par des points-virgules, par exemple, quelqu’un@contoso.com",
+                  "x-ms-powerflows-param-ispartial": false
+                },
+                "Envoyerune-mail(V2)_Corps": {
+                  "type": "string",
+                  "format": "html",
+                  "description": "Spécifier le corps de l'e-mail. Ce paramètre est utilisé comme partie de \"D3B253C9-802C-4159-9EF6-28667CA12E75\"",
+                  "x-ms-powerflows-param-ispartial": true
+                },
+                "Envoyerune-mail(V2)_Corps_1": {
+                  "type": "string"
+                },
+                "Envoyerune-mail(V2)_Corps_2": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "Envoyerune-mail(V2)_À",
+                "Envoyerune-mail(V2)_Corps",
+                "Envoyerune-mail(V2)_Corps_1",
+                "Envoyerune-mail(V2)_Corps_2"
+              ]
+            }
+          }
+        }
+      },
+      "actions": {
+        "Envoyer_un_e-mail_(V2)": {
+          "runAfter": {},
+          "metadata": {
+            "operationMetadataId": "4ffea81a-458c-4473-b7c1-9769dd47ab0b"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_office365",
+              "operationId": "SendEmailV2",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_office365"
+            },
+            "parameters": {
+              "emailMessage/To": "@triggerBody()['Envoyerune-mail(V2)_À']",
+              "emailMessage/Subject": "Nouveau courrier est ajouté",
+              "emailMessage/Body": "<p>Courrier d'objet \"<strong>@{triggerBody()['Envoyerune-mail(V2)_Corps']}</strong>\".<br>\nAgent: <strong></strong><strong>@{triggerBody()['Envoyerune-mail(V2)_Corps_1']}</strong><strong></strong><br>\nDate:<strong> </strong><strong>@{triggerBody()['Envoyerune-mail(V2)_Corps_2']}</strong><strong></strong><br>\n</p>",
+              "emailMessage/Importance": "Normal"
+            },
+            "authentication": {
+              "type": "Raw",
+              "value": "@json(decodeBase64(triggerOutputs().headers['X-MS-APIM-Tokens']))['$ConnectionKey']"
+            }
+          }
+        }
+      }
+    },
+    "templateName": ""
+  },
+  "schemaVersion": "1.0.0.0"
+}

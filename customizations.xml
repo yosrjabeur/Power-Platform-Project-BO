@@ -1,0 +1,186 @@
+<ImportExportXml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Entities></Entities>
+  <Roles></Roles>
+  <Workflows>
+    <Workflow WorkflowId="{305c89e3-5ad4-ed11-a7c7-0022489aa5af}" Name="Update_Etat">
+      <JsonFileName>/Workflows/Update_Etat-305C89E3-5AD4-ED11-A7C7-0022489AA5AF.json</JsonFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>5</Category>
+      <Mode>0</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>1.0.0.0</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <PrimaryEntity>none</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1036" description="Update_Etat" />
+      </LocalizedNames>
+    </Workflow>
+    <Workflow WorkflowId="{c4eb7708-41d8-ed11-a7c7-0022489aa5af}" Name="Add_courrier">
+      <JsonFileName>/Workflows/Add_courrier-C4EB7708-41D8-ED11-A7C7-0022489AA5AF.json</JsonFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>5</Category>
+      <Mode>0</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>1.0.0.0</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <PrimaryEntity>none</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1036" description="Add_courrier" />
+      </LocalizedNames>
+    </Workflow>
+    <Workflow WorkflowId="{be3b95e6-2cdd-ed11-a7c6-0022489aa5af}" Name="Update_Dashboard">
+      <JsonFileName>/Workflows/Update_Dashboard-BE3B95E6-2CDD-ED11-A7C6-0022489AA5AF.json</JsonFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>5</Category>
+      <Mode>0</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>1.0.0.0</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <PrimaryEntity>none</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1036" description="Update_Dashboard" />
+      </LocalizedNames>
+    </Workflow>
+    <Workflow WorkflowId="{d6150699-3bef-ed11-8848-0022489ba36f}" Name="Destinataire_Notification">
+      <JsonFileName>/Workflows/Destinataire_Notification-D6150699-3BEF-ED11-8848-0022489BA36F.json</JsonFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>5</Category>
+      <Mode>0</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>1.0.0.2</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <PrimaryEntity>none</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1036" description="Destinataire_Notification" />
+      </LocalizedNames>
+    </Workflow>
+  </Workflows>
+  <FieldSecurityProfiles></FieldSecurityProfiles>
+  <Templates />
+  <EntityMaps />
+  <EntityRelationships />
+  <OrganizationSettings />
+  <optionsets />
+  <CustomControls />
+  <EntityDataProviders />
+  <CanvasApps>
+    <CanvasApp>
+      <Name>new_gestiondescourriersappbo_65b8e</Name>
+      <AppVersion>2023-06-02T12:22:14Z</AppVersion>
+      <Status>Ready</Status>
+      <CreatedByClientVersion>3.23053.41.0</CreatedByClientVersion>
+      <MinClientVersion>3.23053.41.0</MinClientVersion>
+      <Tags>{"primaryDeviceWidth":"1366","primaryDeviceHeight":"76.8","supportsPortrait":"true","supportsLandscape":"true","primaryFormFactor":"Tablet","publisherVersion":"3.23053.41","minimumRequiredApiVersion":"2.2.0","hasComponent":"true","hasUnlockedComponent":"true","isUnifiedRootApp":"false","sienaVersion":"20230515T095258Z-3.23051.23.0"}</Tags>
+      <IsCdsUpgraded>0</IsCdsUpgraded>
+      <GalleryItemId xsi:nil="true"></GalleryItemId>
+      <BackgroundColor>RGBA(0,176,240,1)</BackgroundColor>
+      <DisplayName>Gestion des Courriers-App-BO</DisplayName>
+      <Description>Gestion des courriers d'une entreprise (Bureau d'Ordre)</Description>
+      <CommitMessage xsi:nil="true"></CommitMessage>
+      <Publisher xsi:nil="true"></Publisher>
+      <AuthorizationReferences>[{"resourceId":"powerbi"}]</AuthorizationReferences>
+      <ConnectionReferences>{"4f35603e-f8bc-44e9-bcbf-28e97f95baa2":{"id":"/providers/microsoft.powerapps/apis/shared_office365users","displayName":"Utilisateurs d’Office 365","iconUri":"https://connectoricons-prod.azureedge.net/releases/v1.0.1626/1.0.1626.3238/office365users/icon.png","dataSources":["Utilisateursd’Office365"],"dependencies":[],"dependents":[],"parameterHints":{},"parameterHintsV2":{},"isOnPremiseConnection":false,"bypassConsent":false,"dataSets":{},"apiTier":"Standard"},"8f09ab71-9d98-4827-ac6b-1e24c33922e3":{"id":"/providers/microsoft.powerapps/apis/shared_office365","displayName":"Office 365 Outlook","iconUri":"https://connectoricons-prod.azureedge.net/releases/v1.0.1626/1.0.1626.3238/office365/icon.png","dataSources":["Office365Outlook"],"dependencies":[],"dependents":[],"parameterHints":{},"parameterHintsV2":{},"isOnPremiseConnection":false,"bypassConsent":false,"dataSets":{},"apiTier":"Standard","actions":["SendEmailV2"]},"bf3c71e3-4211-432a-9c01-bddda1e8e133":{"id":"/providers/microsoft.powerapps/apis/shared_sharepointonline","displayName":"SharePoint","iconUri":"https://connectoricons-prod.azureedge.net/releases/v1.0.1636/1.0.1636.3297/sharepointonline/icon.png","dataSources":["UserBO","CourriersBO","Corbeille"],"dependencies":[],"dependents":[],"parameterHints":{},"parameterHintsV2":{},"isOnPremiseConnection":false,"bypassConsent":false,"dataSets":{"https://dotitmeducation.sharepoint.com/sites/SiteBO":{"dataSources":{"UserBO":{"tableName":"31015c26-bfc7-4bbf-b4ab-87a8b3bf5df1"},"CourriersBO":{"tableName":"8fcf0c65-cfc7-48fd-95c5-42001552f8d1"},"Corbeille":{"tableName":"6b4671f4-685e-4177-97f1-108df12f759c"}}}},"apiTier":"Standard","actions":["providers/PowerPlatform.Governance/Operations/Read"]},"4aeacad1-891b-443c-8121-b0bcf1db601b":{"id":"/providers/microsoft.powerapps/apis/shared_logicflows","displayName":"Flux logiques","iconUri":"https://connectoricons-prod.azureedge.net/releases/v1.0.1636/1.0.1636.3297/logicflows/icon.png","dataSources":["Update_Etat"],"dependencies":["b339fd98-4287-4c62-bbd6-5d55801a1bd9"],"dependents":[],"parameterHints":{"workflowName":{"value":"7c040545-4c4c-413a-ad8a-e403a976ec75"},"workflowEntityId":{"value":"305c89e3-5ad4-ed11-a7c7-0022489aa5af"},"b339fd98-4287-4c62-bbd6-5d55801a1bd9":{"value":"shared_office365"}},"parameterHintsV2":{"workflowName":{"value":"7c040545-4c4c-413a-ad8a-e403a976ec75"},"workflowEntityId":{"value":"305c89e3-5ad4-ed11-a7c7-0022489aa5af"},"shared_office365":{"value":"b339fd98-4287-4c62-bbd6-5d55801a1bd9"}},"isOnPremiseConnection":false,"bypassConsent":false,"dataSets":{},"apiTier":"Standard","actions":["Run"]},"b339fd98-4287-4c62-bbd6-5d55801a1bd9":{"id":"/providers/microsoft.powerapps/apis/shared_office365","displayName":"Office 365 Outlook","iconUri":"https://connectoricons-prod.azureedge.net/releases/v1.0.1626/1.0.1626.3238/office365/icon.png","dataSources":[],"dependencies":[],"dependents":["4aeacad1-891b-443c-8121-b0bcf1db601b","2a090a8a-8847-45d4-980e-da0c70ba5c52","be27154e-25ea-4ed6-aaaf-977800f70155"],"parameterHints":{},"parameterHintsV2":{},"isOnPremiseConnection":false,"bypassConsent":false,"dataSets":{},"apiTier":"Standard"},"20ec3c05-9d62-4378-b49f-87fcc84d4236":{"id":"/providers/microsoft.powerapps/apis/shared_logicflows","displayName":"Flux logiques","iconUri":"https://connectoricons-prod.azureedge.net/releases/v1.0.1636/1.0.1636.3297/logicflows/icon.png","dataSources":["Update_Dashboard"],"dependencies":["8d5a64af-f883-43a4-afb0-9e7f85e323bb"],"dependents":[],"parameterHints":{"workflowName":{"value":"38aad1a9-300d-4b3c-ac8c-facf53f70435"},"workflowEntityId":{"value":"be3b95e6-2cdd-ed11-a7c6-0022489aa5af"},"8d5a64af-f883-43a4-afb0-9e7f85e323bb":{"value":"shared_powerbi"}},"parameterHintsV2":{"workflowName":{"value":"38aad1a9-300d-4b3c-ac8c-facf53f70435"},"workflowEntityId":{"value":"be3b95e6-2cdd-ed11-a7c6-0022489aa5af"},"shared_powerbi":{"value":"8d5a64af-f883-43a4-afb0-9e7f85e323bb"}},"isOnPremiseConnection":false,"bypassConsent":false,"dataSets":{},"apiTier":"Standard","actions":["Run"]},"8d5a64af-f883-43a4-afb0-9e7f85e323bb":{"id":"/providers/microsoft.powerapps/apis/shared_powerbi","displayName":"Power BI","iconUri":"https://connectoricons-prod.azureedge.net/releases/v1.0.1631/1.0.1631.3268/powerbi/icon.png","dataSources":[],"dependencies":[],"dependents":["20ec3c05-9d62-4378-b49f-87fcc84d4236"],"parameterHints":{},"parameterHintsV2":{},"isOnPremiseConnection":false,"bypassConsent":false,"dataSets":{},"apiTier":"Standard"},"2a090a8a-8847-45d4-980e-da0c70ba5c52":{"id":"/providers/microsoft.powerapps/apis/shared_logicflows","displayName":"Flux logiques","iconUri":"https://connectoricons-prod.azureedge.net/releases/v1.0.1636/1.0.1636.3297/logicflows/icon.png","dataSources":["Add_courrier"],"dependencies":["b339fd98-4287-4c62-bbd6-5d55801a1bd9"],"dependents":[],"parameterHints":{"workflowName":{"value":"f3131234-4472-4af1-8ed7-e0e2dd062a5c"},"workflowEntityId":{"value":"c4eb7708-41d8-ed11-a7c7-0022489aa5af"},"b339fd98-4287-4c62-bbd6-5d55801a1bd9":{"value":"shared_office365"}},"parameterHintsV2":{"workflowName":{"value":"f3131234-4472-4af1-8ed7-e0e2dd062a5c"},"workflowEntityId":{"value":"c4eb7708-41d8-ed11-a7c7-0022489aa5af"},"shared_office365":{"value":"b339fd98-4287-4c62-bbd6-5d55801a1bd9"}},"isOnPremiseConnection":false,"bypassConsent":false,"dataSets":{},"apiTier":"Standard","actions":["Run"]},"be27154e-25ea-4ed6-aaaf-977800f70155":{"id":"/providers/microsoft.powerapps/apis/shared_logicflows","displayName":"Flux logiques","iconUri":"https://connectoricons-prod.azureedge.net/releases/v1.0.1636/1.0.1636.3297/logicflows/icon.png","dataSources":["Destinataire_Notification"],"dependencies":["b339fd98-4287-4c62-bbd6-5d55801a1bd9"],"dependents":[],"parameterHints":{"workflowName":{"value":"e4b55b9c-a593-4d54-90c1-4f4e664919bc"},"workflowEntityId":{"value":"d6150699-3bef-ed11-8848-0022489ba36f"},"b339fd98-4287-4c62-bbd6-5d55801a1bd9":{"value":"shared_office365"}},"parameterHintsV2":{"workflowName":{"value":"e4b55b9c-a593-4d54-90c1-4f4e664919bc"},"workflowEntityId":{"value":"d6150699-3bef-ed11-8848-0022489ba36f"},"shared_office365":{"value":"b339fd98-4287-4c62-bbd6-5d55801a1bd9"}},"isOnPremiseConnection":false,"bypassConsent":false,"dataSets":{},"apiTier":"Standard"}}</ConnectionReferences>
+      <DatabaseReferences>{}</DatabaseReferences>
+      <AppComponents>[]</AppComponents>
+      <AppComponentDependencies>[]</AppComponentDependencies>
+      <CanConsumeAppPass>1</CanConsumeAppPass>
+      <CanvasAppType>0</CanvasAppType>
+      <BypassConsent>0</BypassConsent>
+      <AdminControlBypassConsent>0</AdminControlBypassConsent>
+      <EmbeddedApp xsi:nil="true"></EmbeddedApp>
+      <IntroducedVersion>1.0</IntroducedVersion>
+      <CdsDependencies>{"cdsdependencies":[{"dependencyid":"305c89e3-5ad4-ed11-a7c7-0022489aa5af","componenttype":29,"componenttypeplatformname":"Workflow"},{"dependencyid":"be3b95e6-2cdd-ed11-a7c6-0022489aa5af","componenttype":29,"componenttypeplatformname":"Workflow"},{"dependencyid":"c4eb7708-41d8-ed11-a7c7-0022489aa5af","componenttype":29,"componenttypeplatformname":"Workflow"},{"dependencyid":"d6150699-3bef-ed11-8848-0022489ba36f","componenttype":29,"componenttypeplatformname":"Workflow"}]}</CdsDependencies>
+      <IsCustomizable>1</IsCustomizable>
+      <BackgroundImageUri>/CanvasApps/new_gestiondescourriersappbo_65b8e_BackgroundImageUri</BackgroundImageUri>
+      <DocumentUri>/CanvasApps/new_gestiondescourriersappbo_65b8e_DocumentUri.msapp</DocumentUri>
+    </CanvasApp>
+  </CanvasApps>
+  <connectionreferences>
+    <connectionreference connectionreferencelogicalname="new_sharedcommondataservice_05b64">
+      <connectionreferencedisplayname>Microsoft Dataverse (hérité) BureaudOrdre-05b64</connectionreferencedisplayname>
+      <connectorid>/providers/Microsoft.PowerApps/apis/shared_commondataservice</connectorid>
+      <iscustomizable>1</iscustomizable>
+      <statecode>0</statecode>
+      <statuscode>1</statuscode>
+    </connectionreference>
+    <connectionreference connectionreferencelogicalname="new_sharedcommondataserviceforapps_e5366">
+      <connectionreferencedisplayname>Microsoft Dataverse BureaudOrdre-e5366</connectionreferencedisplayname>
+      <connectorid>/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps</connectorid>
+      <iscustomizable>1</iscustomizable>
+      <statecode>0</statecode>
+      <statuscode>1</statuscode>
+    </connectionreference>
+    <connectionreference connectionreferencelogicalname="new_sharedoffice365_547b1">
+      <connectionreferencedisplayname>Office 365 Outlook BureaudOrdre-547b1</connectionreferencedisplayname>
+      <connectorid>/providers/Microsoft.PowerApps/apis/shared_office365</connectorid>
+      <iscustomizable>1</iscustomizable>
+      <statecode>0</statecode>
+      <statuscode>1</statuscode>
+    </connectionreference>
+    <connectionreference connectionreferencelogicalname="new_sharedpowerbi_a3f25">
+      <connectionreferencedisplayname>Power BI BureaudOrdre-a3f25</connectionreferencedisplayname>
+      <connectorid>/providers/Microsoft.PowerApps/apis/shared_powerbi</connectorid>
+      <iscustomizable>1</iscustomizable>
+      <statecode>0</statecode>
+      <statuscode>1</statuscode>
+    </connectionreference>
+    <connectionreference connectionreferencelogicalname="new_sharedsharepointonline_4facd">
+      <connectionreferencedisplayname>SharePoint BureaudOrdre-4facd</connectionreferencedisplayname>
+      <connectorid>/providers/Microsoft.PowerApps/apis/shared_sharepointonline</connectorid>
+      <iscustomizable>1</iscustomizable>
+      <statecode>0</statecode>
+      <statuscode>1</statuscode>
+    </connectionreference>
+  </connectionreferences>
+  <Languages>
+    <Language>1036</Language>
+  </Languages>
+</ImportExportXml>

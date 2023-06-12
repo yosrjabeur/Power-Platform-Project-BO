@@ -1,0 +1,103 @@
+{
+  "properties": {
+    "connectionReferences": {
+      "shared_office365": {
+        "runtimeSource": "invoker",
+        "connection": {
+          "connectionReferenceLogicalName": "new_sharedoffice365_547b1"
+        },
+        "api": {
+          "name": "shared_office365"
+        }
+      }
+    },
+    "definition": {
+      "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+      "contentVersion": "1.0.0.0",
+      "parameters": {
+        "$connections": {
+          "defaultValue": {},
+          "type": "Object"
+        },
+        "$authentication": {
+          "defaultValue": {},
+          "type": "SecureObject"
+        }
+      },
+      "triggers": {
+        "manual": {
+          "metadata": {
+            "operationMetadataId": "55862860-0ae0-479c-88bd-a2bbe85095e4"
+          },
+          "type": "Request",
+          "kind": "PowerApp",
+          "inputs": {
+            "schema": {
+              "type": "object",
+              "properties": {
+                "Envoyerune-mail(V2)_À": {
+                  "type": "string",
+                  "format": "email",
+                  "description": "Spécifiez les adresses de messagerie en les séparant par des points-virgules, par exemple, quelqu’un@contoso.com",
+                  "x-ms-powerflows-param-ispartial": false
+                },
+                "Envoyerune-mail(V2)_Corps": {
+                  "type": "string",
+                  "format": "html",
+                  "description": "Spécifier le corps de l'e-mail. Ce paramètre est utilisé comme partie de \"27D379CC-8CA4-42E8-BFBE-644D1033402B\"",
+                  "x-ms-powerflows-param-ispartial": true
+                },
+                "Envoyerune-mail(V2)_Corps_1": {
+                  "type": "string"
+                },
+                "Envoyerune-mail(V2)_Objet": {
+                  "type": "string",
+                  "description": "Spécifier l'objet de l'e-mail. Ce paramètre est utilisé comme partie de \"814D75C0-4316-43FE-9EBF-320C3BF432EE\"",
+                  "x-ms-powerflows-param-ispartial": true
+                },
+                "Envoyerune-mail(V2)_Corps_2": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "Envoyerune-mail(V2)_À",
+                "Envoyerune-mail(V2)_Corps",
+                "Envoyerune-mail(V2)_Corps_1",
+                "Envoyerune-mail(V2)_Objet",
+                "Envoyerune-mail(V2)_Corps_2"
+              ]
+            }
+          }
+        }
+      },
+      "actions": {
+        "Envoyer_un_e-mail_(V2)": {
+          "runAfter": {},
+          "metadata": {
+            "operationMetadataId": "067f2ca8-ea8e-4afb-ad96-02a99ff9ebb3"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_office365",
+              "operationId": "SendEmailV2",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_office365"
+            },
+            "parameters": {
+              "emailMessage/To": "@triggerBody()['Envoyerune-mail(V2)_À']",
+              "emailMessage/Subject": "Courrier d'objet @{triggerBody()['Envoyerune-mail(V2)_Objet']}",
+              "emailMessage/Body": "<p>Le courrier d'objet \"<strong></strong><strong>@{triggerBody()['Envoyerune-mail(V2)_Objet']}</strong><strong></strong>\" est <strong></strong><strong>@{triggerBody()['Envoyerune-mail(V2)_Corps']}</strong><strong></strong> à <strong>@{triggerBody()['Envoyerune-mail(V2)_Corps_2']}</strong><strong></strong><br>\nCommentaire: <strong></strong><strong>@{triggerBody()['Envoyerune-mail(V2)_Corps_1']}</strong><strong></strong></p>",
+              "emailMessage/Importance": "Normal"
+            },
+            "authentication": {
+              "type": "Raw",
+              "value": "@json(decodeBase64(triggerOutputs().headers['X-MS-APIM-Tokens']))['$ConnectionKey']"
+            }
+          }
+        }
+      }
+    },
+    "templateName": ""
+  },
+  "schemaVersion": "1.0.0.0"
+}
